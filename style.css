@@ -6,7 +6,7 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     padding: 20px;
-    margin: 0;
+    margin: 20px 20px;
 }
 
 /* Styles for the upper navigation bar */
@@ -43,7 +43,7 @@ body {
 }
 
 .title-name {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     color: #333;
 }
@@ -70,4 +70,19 @@ body {
     margin-right: 20px;
     display: flex;
     justify-content: space-between;
+}
+
+.customer-info, .items{
+    background: #f5e3e3;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+}
+
+.receipt-header {
+    text-align: center;
+    margin-bottom: 0px;
 }
