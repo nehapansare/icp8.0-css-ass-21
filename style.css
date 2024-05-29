@@ -1,13 +1,11 @@
-
-
 /* Apply basic styles to the body */
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     padding: 20px;
     margin-left: 70px;
-    margin-right:70px ;
+    margin-right: 70px;
 }
 
 /* Styles for the upper navigation bar */
@@ -24,8 +22,8 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    
     padding: 10px 20px;
+    flex-wrap: wrap;
 }
 
 /* Styles for the logo section */
@@ -56,16 +54,19 @@ body {
     font-size: 14px;
     color: #040c2c;
 }
-.address-name{
+
+.address-name {
     font-size: 20px;
 }
-.line{
+
+.line {
     background-color: #d0a61e;
     color: #fff;
     padding: 10px;
     text-align: center;
 }
-.NO{
+
+.NO {
     font-size: 18px;
     margin-left: 20px;
     margin-right: 20px;
@@ -73,22 +74,72 @@ body {
     justify-content: space-between;
 }
 
-.customer-info, .items, .totals{
+.customer-info, .items, .totals {
     background: #f5e3e3;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 600px;
     width: 100%;
-    margin: 10px;
-    margin-left: 100px;
+    margin: 10px auto;
 }
 
 .receipt-header {
     text-align: center;
     margin-bottom: 0px;
 }
+
 .totals p {
     margin: 0;
     font-size: 18px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo, .title, .address {
+        flex: none;
+        width: 100%;
+    }
+
+    .NO {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .totals p {
+        font-size: 16px;
+    }
+
+    .customer-info, .items, .totals {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-name {
+        font-size: 24px;
+    }
+
+    .address-name {
+        font-size: 18px;
+    }
+
+    .totals p {
+        font-size: 14px;
+    }
+
+    .NO p {
+        margin: 5px 0;
+    }
 }
