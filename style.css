@@ -96,7 +96,25 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 600px) {
-   
+    .title-name {
+        font-size: 24px;
+    }
+    .address-name {
+        display: none;
+    }
+    .nav-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo, .title, .address {
+        flex: none;
+        width: 100%;
+    }
+    .address-name{
+        display: none;
+    }
+
 }
 
 @media (min-width: 601px) and (max-width:768px) {
@@ -117,7 +135,7 @@ body {
     }
 }
 /* Small devices (tablets, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .title-name {
         font-size: 24px;
     }
@@ -135,7 +153,7 @@ body {
     }
   }
   /* Medium devices (desktops, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 1025px) and (max-width: 1125px) {
     body {
         padding: 10px;
         margin-left: 10px;
@@ -163,9 +181,5 @@ body {
     .customer-info, .items, .totals {
         padding: 15px;
     }
-  }
-  /* Large devices (large desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-
   }
   
